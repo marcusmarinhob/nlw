@@ -1,9 +1,18 @@
+:root{
+   --title-color: #322153; 
+}
+
 html {
     font-family: 'Roboto', sans-serif;
 }
 
 body {
     background: #f0f0f5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
 }
 
 a {
@@ -23,6 +32,7 @@ a {
 }
 
 #page-home header{
+    margin-top: 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +40,7 @@ a {
 
 #page-home header a{
     display: flex;
-    color: #322153;
+    color: var(--title-color);
     font-weight: 700;
 }
 
@@ -42,3 +52,10 @@ a {
     height: 20px;
 }
 
+#page-home main{
+    max-width: 560px;
+}
+
+#page-home main h1{
+    font-size: 54px;    
+}
