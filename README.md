@@ -8,7 +8,7 @@
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/marcusmarinhob/nlw?color=%6027d161">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/marcusmarinhob/nlw">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/marcusmarinhob/nlw?color=%6027d161">
 	
   <a href="https://www.linkedin.com/in/marcusmarinho/">
     <img alt="Made by marcusmarinhob" src="https://img.shields.io/badge/made%20by-marcusmarinhob-%6027d161">
