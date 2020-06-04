@@ -32,7 +32,7 @@ function getCities(){
         for( const city of cities){
             citySelect.innerHTML += `<option value="${city.id}"> ${city.nome} </option>`
         }     
-              
+
         citySelect.disabled = false
     })
 }
@@ -40,3 +40,18 @@ function getCities(){
 document
     .querySelector("select[name=uf]")
     .addEventListener("change", getCities)
+
+// Itens de coleta
+const itemsToColletct = document.querySelectorAll(".items-grid li")
+
+for(const item of itemsToColletct){
+    item.addEventListener("click", handleSelectedItem)
+}
+
+function handleSelectedItem(event){
+    const itemLi = event.target
+
+    itemLi.classList.toggle("selected")
+
+    const itemId = event.target.dataset.id
+}
