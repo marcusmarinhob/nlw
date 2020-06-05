@@ -48,10 +48,18 @@ for(const item of itemsToColletct){
     item.addEventListener("click", handleSelectedItem)
 }
 
+let selectedItems = []
+
 function handleSelectedItem(event){
     const itemLi = event.target
 
     itemLi.classList.toggle("selected")
 
     const itemId = event.target.dataset.id
+
+    const alreadySelected = selectedItems.findIndex( function(item){
+        const itemFound = item == itemFound
+        return itemFound
+    })
+
 }
