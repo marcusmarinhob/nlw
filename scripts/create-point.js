@@ -57,9 +57,22 @@ function handleSelectedItem(event){
 
     const itemId = event.target.dataset.id
 
-    const alreadySelected = selectedItems.findIndex( function(item){
-        const itemFound = item == itemFound
+    const alreadySelected = selectedItems.findIndex( item => {
+        const itemFound = item == itemId
         return itemFound
     })
+
+    if(alreadySelected >= 0){
+        const filteredItems = selectedItems.filter( item => {
+            const itemIsDifferent = item != itemId
+            return itemIsDifferent
+        })
+
+        selectedItems = filteredItems
+    } else {
+        selectedItems.push(itemId)
+    }
+
+    //console.log(selectedItems)
 
 }
