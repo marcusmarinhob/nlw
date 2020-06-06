@@ -11,7 +11,7 @@ nunjucks.configure("src/views", {
 })
 
 server.get("/", (req, res) => {
-    return res.render("index.html", {title: "Um título"})
+    return res.render("index.html", {title: "Seu marketplace de coleta de resíduos"})
 })
 
 server.get("/create-point", (req, res) => {
