@@ -1,0 +1,23 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r     <img alt=\"NextLevelWeek\" title=\"#NextLevelWeek\" src=\".github/logo.svg\" width=\"250px\" />\r </h1>",
+  "main": "srd/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcusmarinhob/nlw.git"
+  },
+  "keywords": [],
+  "author": "Marcus Marinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcusmarinhob/nlw/issues"
+  },
+  "homepage": "https://github.com/marcusmarinhob/nlw#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
