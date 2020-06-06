@@ -3,19 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ecoleta</title>
+
+        {# Title ************************************************* #}
+        {% block title %}
+            <title>Ecoleta</title>
+        {% endblock title %}
+
         
+        {# Font configuration ************************************ #}
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
-        
+
+
+        {# Styles ************************************************ #}
         <link rel="stylesheet" href="/styles/main.css">   
+        
+        {% block styles %} 
+            {# Type the styles you want to include with this block #}
+        {% endblock styles %}
 
         <link rel="stylesheet" href="/styles/responsive.css">
-
     </head>
 
     <body>
-        <div id="page-home">
-
+        <div id={{ bodyId }}>
+            {% block content %}
+                {# Type the content you want to include with this block #}
+            {% endblock content %}
         </div>
+
+        {% block modals %}
+            {# Type the modals you want to include with this block #}
+        {% endblock modals %}
+
+        {% block scripts %}
+            {# Type the scripts you want to include with this block #}
+        {% endblock scripts %}
     </body>
 </html>
