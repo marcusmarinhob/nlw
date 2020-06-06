@@ -3,7 +3,7 @@ const server = express()
 
 server.use(express.static("public"))
 
-const nunjucks = require("nunjunks")
+const nunjucks = require("nunjucks")
 
 nunjucks.configure("src/views", {
     express: server,
@@ -11,15 +11,15 @@ nunjucks.configure("src/views", {
 })
 
 server.get("/", (req, res) => {
-    res.sendfile(__dirname + "/views/index.html")
+    return res.render("index.html", {title: "Um título"})
 })
 
 server.get("/create-point", (req, res) => {
-    res.sendfile(__dirname + "/views/create-point.html")
+    return res.render("create-point.html")
 })
 
 server.get("/search-results", (req, res) => {
-    res.sendfile(__dirname + "/views/search-results.html")
+    return res.render("search-results.html")
 })
 
 server.listen(3000)
