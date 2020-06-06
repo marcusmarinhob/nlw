@@ -27,11 +27,16 @@
 }
 
 form{
+    display: inline-block;
     background-color: white;
-    margin-top: 80px;
-    padding: 64px;
+    margin-top: 80px;    
+    padding: 50px;
     border-radius: 8px;
-    max-width: 730px;    
+    max-width: 760px;   
+    min-width: 600px;
+    width: 60%; 
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 form h1{
