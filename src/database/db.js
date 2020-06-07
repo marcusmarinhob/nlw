@@ -66,15 +66,15 @@ module.exports = db
 //             const values = values2
 //             // db.run(query, values, afterInsertData)
             
-//             // Consult data in the table
-//             db.all(`SELECT * FROM places`, function(err, rows){
-//                 if(err){
-//                     return console.log(err)
-//                 }
+    // Consult data in the table
+    // db.all(`SELECT * FROM places`, function(err, rows){
+    //     if(err){
+    //         return console.log(err)
+    //     }
 
-//         console.log("Aqui estão os seus registros:")
-//         console.log(rows)
-//     })
+    //     console.log("Aqui estão os seus registros:")
+    //     console.log(rows)
+    // })
 
 //     // Remove data from the table
 //     db.run(`DELETE FROM places WHERE id = ?`, [3], function(err){
