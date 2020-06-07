@@ -19,7 +19,7 @@ server.get("/", (req, res) => {
 })
 
 server.get("/create-point", (req, res) => {
-    return res.render("create-point.html")
+    return res.render("create-point.html", {saved: true})
 })
 
 server.post("/create-point", (req, res) => {
@@ -55,7 +55,7 @@ server.post("/create-point", (req, res) => {
 
         console.log("Cadastrado com sucesso")
         console.log(this)
-        return res.send("ok")
+        return res.render("create-point.html", {save: true})
     }      
 
     db.run(query, values, afterInsertData)
