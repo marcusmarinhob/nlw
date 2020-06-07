@@ -7,7 +7,7 @@ const db = new sqlite3.Database("./src/database/database.db")
 module.exports = db
 
 // Use database object
-// db.serialize( () => {      
+db.serialize( () => {      
 //     // Create table
 //     db.run(`
 //     CREATE TABLE IF NOT EXISTS places (
@@ -77,11 +77,11 @@ module.exports = db
     // })
 
 //     // Remove data from the table
-//     db.run(`DELETE FROM places WHERE id = ?`, [3], function(err){
-//         if(err){
-//             return console.log(err)
-//         }
+    // db.run(`DELETE FROM places WHERE id = ?`, [4], function(err){
+    //     if(err){
+    //         return console.log(err)
+    //     }
 
-//         console.log("Registros deletados com sucesso!")
-//     })
-// })
+    //     console.log("Registros deletados com sucesso!")
+    // })
+})
