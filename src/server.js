@@ -19,7 +19,7 @@ server.get("/", (req, res) => {
 })
 
 server.get("/create-point", (req, res) => {
-    return res.render("create-point.html", {saved: true})
+    return res.render("create-point.html")
 })
 
 server.post("/create-point", (req, res) => {
@@ -55,7 +55,7 @@ server.post("/create-point", (req, res) => {
 
         console.log("Cadastrado com sucesso")
         console.log(this)
-        return res.render("create-point.html", {save: true})
+        return res.render("create-point.html", {saved: true})
     }      
 
     db.run(query, values, afterInsertData)
@@ -66,7 +66,8 @@ server.get("/search-results", (req, res) => {
     // Get data on database
     db.all(`SELECT * FROM places`, function(err, rows){
         if(err){
-            return console.log(err)
+            console.log(err)
+            return res.send("Erro no Cadastro")
         }
 
         const total = rows.length
